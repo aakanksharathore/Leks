@@ -15,7 +15,7 @@ stateM = vector(length=M)
 
 #cp = 0.5  #introduce copying strength
 
-T=100 # Number of time-steps for the simulation
+T=1000 # Number of time-steps for the simulation
 
 Tot = 0  ##Keep appending no. of females in all the terrirtories, to generate histogram in the end
 
@@ -29,7 +29,7 @@ if(sum(lek)!=0){
 
 ##For null model just set femP=1
 #femP=1
-comP=  (lekP*femP)/(lekP*femP+(1-lekP)*(1-femP))
+comP=  (lekP*femP)/(lekP*femP+(1-lekP)*(1-femP))h
 comP=as.vector(comP)
 ##Now each female chooses a territory to move to from above probability distribution(synchronous updat)
 
